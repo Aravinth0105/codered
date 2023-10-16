@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+       box-sizing: border-box;
+        
+    }
+    .line{
+        height: 20px;
+        width: 100%;
+        background-color: rgb(237, 212, 184);
+    }
+    nav{
+        outline: none;
+        border: none;
+        text-decoration: none;
+       list-style: none;
+       position: relative;
+       top: 0;
+       bottom: 0;
+       height: 100vh;
+       left: 0;
+       background: rgb(237, 212, 184);
+       width: 280px;
+       overflow: hidden;
+       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+       height: 700px;
+    }
+    i{
+        color: red;
+        
+    }
+
+
+
+
+
+
+
+@keyframes rd {
+  0% {
+    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+            transform: rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(-1, 1, 0, 180deg);
+            transform: rotate3d(-1, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(-1, 1, 0, 360deg);
+            transform: rotate3d(-1, 1, 0, 360deg);
+  }
+}
+
+
+
+
+
+    .popi{
+           position: absolute;
+           min-height: 100vh;
+           top: 600px;
+         left: 600px;
+       }
+       @media (max-width: 800px) {
+            .popi {
+                position: absolute;
+           min-height: 100vh;
+           top: 600px;
+         left: 150px;
+              
+            }
+        }
+        @media (max-width: 1000px) {
+            .popi {
+                position: absolute;
+           min-height: 100vh;
+           top: 600px;
+         left: 250px;
+              
+            }
+        }
+    
+       @media (max-width: 500px) {
+            .popi {
+                position: absolute;
+           min-height: 100vh;
+           top: 500px;
+         left: 100px;
+              
+            }
+        }
+        @media (max-width: 700px) {
+            .popi {
+                position: absolute;
+           min-height: 100vh;
+           top: 500px;
+         left: 110px;
+              
+            }
+        }
+       #hpop{
+           position: relative;
+           margin: 0;
+           font-size: 4em;
+           font-weight: 900;
+           color: rgb(252, 4, 4);
+           
+           z-index: 1;
+           overflow: hidden;
+       }
+      
+       #hpop:before
+       {
+           content: ' ';
+           position: absolute;
+           left: 110%;
+           width: 120%;
+           height: 100%;
+           background: linear-gradient(90deg,transparent 0%, white 5%, white 100%
+           );
+           animation: animate 5.5s linear forwards infinite;
+       }
+       @keyframes animate
+       {
+           0%
+           {
+               left:110%
+           }
+          100%
+           {
+               left:-20%
+           }
+       }
+
+
+
+
+
+
+   
+    #bgg{
+        display: flex;
+    
+      position: absolute;
+      top: 40px;
+      left: 500px;
+    }
+    @media (max-width: 1200px) {
+            #bgg {
+              
+      position: absolute;
+      top: 100px;
+      left: 420px;
+      height: 500px;
+      width: 500px;
+            }
+        }
+        @media (max-width: 1300px) {
+            #bgg {
+              
+      position: absolute;
+      top: 100px;
+      left: 370px;
+      height: 450px;
+      width: 450px;
+            }
+        }
+
+    @media (max-width: 1100px) {
+            #bgg {
+              
+      position: absolute;
+      top: 100px;
+      left: 250px;
+      height: 450px;
+      width: 450px;
+            }
+        }
+        @media (max-width: 900px) {
+            #bgg {
+        display: flex;  
+        
+      position: absolute;
+      top: 150px;
+      left: 180px;
+      height: 400px;
+      width: 400px;
+              
+            }
+        }
+        @media (max-width: 700px) {
+            #bgg {
+        display: flex;  
+        
+      position: absolute;
+      top: 200px;
+      left: 120px;
+      height: 320px;
+      width: 320px;
+              
+            }
+        }
+        @media (max-width: 600px) {
+            #bgg {
+        display: flex;  
+        
+      position: absolute;
+      top: 200px;
+      left: 100px;
+      height: 250px;
+      width: 250px;
+              
+            }
+        }
+
+        @media (max-width: 500px) {
+            #bgg {
+        display: flex;  
+        
+      position: absolute;
+      top: 200px;
+      left: 150px;
+      height: 250px;
+      width: 250px;
+              
+            }
+        }
+    .contaier1{
+        display: flex;  
+       position: absolute;
+        display: flex;
+        top: 0;
+
+    }
+    .logo{
+       display: flex;
+       position: absolute;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+    #dash{
+        position: absolute;
+        top: 30px;
+    }
+   
+   .logo img{
+    width:45px ;
+    height: 45px;
+    border-radius: 10%;
+   } 
+   .logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+   }
+   #a1{
+    position: relative;
+    color: blueviolet;
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+    text-decoration: none;
+   }
+   #a1:hover{
+    background: beige;
+    border-radius: 0 30% 0 30%;
+   }
+   nav .bx{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+   }
+   .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+   }
+   .logout{
+    position: absolute;
+    bottom: 10px;
+    text-decoration: none;
+    width: 280px;
+   }
+   .logout:hover{
+    background: beige;
+    border-radius: 30% 0% 30% 0%;
+    width: 280px;
+   }
+   @media (max-width: 1300px) {
+            span {
+               display: none;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            nav {
+               width: 100px;
+               align-items: center;
+              
+            }
+        }
+
+
+/* inga vaaaa */
+        .nav .bx li #a1:hover i{
+            transition: 0.5s;
+            rotate: 360deg;
+            
+        }
+        .nav .bx li #a1 i{
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        
+
+
+
+
+        
+      
+
+/* 2nd */
+       
+
+        /* 3rd */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+
+        .image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        @keyframes bounci {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        
+        transform: translateY(-10px);
+      }
+    }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%; /* Full width on smaller screens */
+            }
+        }
+        #col2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-direction: column;
+        }
+#secnd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mar{
+    margin-bottom: ;
+}
+
+
+
+
+
+        .title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color:  rgb(221, 6, 6);
+    font-weight: 50px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+   
+   }
+   .cardu{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    /*background-color: #ccc;*/
+    border-radius: 20px;
+    align-items: center;
+    transition: 0.5s;
+   
+    
+   }
+   .cir{
+    margin-right: 15px;
+   }
+   .cardu .cir{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    
+   }
+   .cardu .cir::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 175, 239);
+    clip-path: circle(100px at center);
+    transition: 0.5s ;
+   }
+  
+   
+  
+   .cardu .cir:hover:before{
+    background-color: beige;
+    clip-path: circle(300px at center);
+   }
+   .cardu img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 240px;
+    pointer-events: none;
+    transition: 0.5s;
+   }
+   .cardu:hover img{
+    left: 75%;
+    height: 300px;
+   }
+   
+   .cardu .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 10px 40px 10px 0;
+    top: 5px;
+    display: none;
+    
+   }
+   .cardu:hover .content{
+      display: block;
+   }
+
+  
+   #h3{
+    color: black;
+   }
+   #h5{
+    color:  rgb(2, 2, 56);
+   }
+.link{
+    position: absolute;
+    margin-top: 200px;
+   margin-left: 80px;
+    color: navy;
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+
+
+
+
+
+
+.split{
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.card{
+    display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+           
+            width: 300px;
+            height: 400px;
+          
+            background: #fff;
+            transform-style: preserve-3d;
+            transform: translate(-50%,-50%)perspective(2000px);
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),0 20px 100px rgba(0, 0, 0, 0.5);
+            transition: 1s;
+        }
+        .card:hover{
+            left: 60%;
+        }
+        @media (max-width: 800px){
+        .card{
+            position: absolute;
+            top: 50%;
+            left: 55%;
+           
+            width: 200px;
+            height: 300px;
+          
+            background: #fff;
+            transform-style: preserve-3d;
+            transform: translate(-50%,-50%)perspective(2000px);
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),0 20px 100px rgba(0, 0, 0, 0.5);
+            transition: 1s;
+        }
+        }
+        @media (max-width: 800px){
+            
+            .card:hover{
+            left: 60%;
+        } 
+        }
+        @media (max-width: 800px){
+            .imgbox img{
+                width: 200px;
+                height: 300px;
+            } 
+        }
+
+        .card:hover{
+            transform: translate(-50%,-50%)perspective(2000px)rotate(-3deg);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),0 10px 100px rgba(0, 0, 0, 0.5);
+        }
+        .card:before{
+            content: " ";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #475b02;
+            transform-origin: bottom;
+            transform: skewX(-45degsollu);
+        }
+        .card:after{
+            content: " ";
+            position: absolute;
+            top: 0px;
+            right: -5px;
+            height: 100%;
+            width: 5px;
+            background: #c2ed35;
+            transform-origin: left;
+            transform: skewy(-45deg);
+        }
+        .card .imgbox{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-origin: left;
+            transition: 1s;
+        }
+        .card:hover .imgbox
+        {
+            transform: rotateY(-135deg);
+        }
+        .card .details{
+          position: absolute;  
+          top: 0;
+          left: 0;
+          box-sizing: border-box;
+           padding: 20px;
+           z-index: -1;
+          
+        }
+        #card3{
+            top: 400px;
+        }
+        #card{
+            top: 850px;
+            
+        }
+        #card1{
+            top: 1330px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .footer{
+            display: flex;
+            position: relative;
+            height: 250px;
+            width: 100%;
+            background-color: beige;
+           top: 2900px;
+            color: #000;
+        }
+        #logoo{
+            margin-top: 70px;
+            margin-left: 70px;
+            width: 100px;
+            height: 100px;
+        }
+        .list{
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-left: 180px;
+            margin-top: 20px;
+            color: black;
+        
+        }
+        #h33:hover{cursor: pointer;
+               color: red;
+               transition: 0.5s ease;
+        }
+        #h22{
+            color: black;
+            position: absolute;
+            margin-top: 80px;
+           left: 580px;
+           text-decoration: underline;
+        }
+        .social{
+            display: flex;
+            position: absolute;
+            font-size: 30px;
+            color: black;
+            gap: 1rem;
+            left: 530px;
+            top: 130px;
+            cursor: pointer;
+        }
+        .social > i:hover{color: red;}
+        #p{
+            position: absolute;
+            color: black;
+            font-size: 20px;
+            top: 100px;
+            right: 70px;
+            cursor: pointer;
+        }
+
+        @media (max-width:900px){
+        
+            .footer{width: 100%;
+            height: 200px;}
+            .list{
+            display: flex;
+            gap: 1rem;
+            margin-left: 1px;
+            margin-top: 20px;
+            color: black;
+        }
+        #h33{
+            font-size: 20px;
+        }
+        #logoo{
+            margin-top: 70px;
+            margin-left: 10px;
+            width: 70px;
+            height: 70px;}
+            #h22{
+                left: 220px;
+                font-size: 20px;
+            }
+            .social{
+                left: 200px;
+                font-size: 20px;
+            }
+            #p{
+                left: 430px;
+                font-size: 15px;
+            }
+        }
+
+
+        @media (max-width:768px){
+        .footer{width: 100%;
+        height: 170px;}
+        .list{
+        display: flex;
+        gap: 1rem;
+        margin-left: 1px;
+        margin-top: 20px;
+        color: black;
+    }
+    #h33{
+        font-size: 17px;
+    }
+    #logoo{
+        margin-top: 70px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;}
+        #h22{
+            left: 180px;
+            font-size: 17px;
+        }
+        .social{
+            left: 160px;
+            font-size: 20px;
+        }
+        #p{
+            left: 370px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width:540px){
+        
+        .footer{width: 100%;
+        height: 150px;}
+        .list{
+        display: flex;
+        gap: 1rem;
+        margin-left: 1px;
+        margin-top: 20px;
+        color: black;
+    }
+    #h33{
+        font-size: 12px;
+        left: 10px;
+    }
+    #logoo{
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;}
+        #h22{
+            left: 140px;
+            font-size: 14px;
+            top: 4px;
+        }
+        .social{
+            left: 110px;
+            font-size: 14px;
+            top: 110px;
+        }
+        #p{
+            left: 250px;
+            font-size: 13px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    .whole{
+    display: flex;
+    justify-content: space-around;
+}
+.skill{
+   
+    height: 160px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    position: relative;
+    display: flex;
+    
+   
+  /* background-color: aqua;*/
+
+}
+.outer{
+    height: 160px;
+    width: 160px;
+     /*border: 1px solid red;*/
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                 -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner{
+    display: flex;
+    height: 120px;
+    width: 120px;
+    /*border: 1px solid red;*/
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                align-items: center;
+                justify-content: center;
+
+}
+#number{
+    font-weight: 700px;
+    color: red;
+}
+circle{
+    fill: none;
+   /* stroke: red;*/
+   stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 0;
+    animation: anim 3s linear forwards infinite;
+}
+
+svg{
+    position: absolute;
+    bottom: px;
+   
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 140;
+    }
+}
+
+
+.detailsrating{
+    background-image: url(blk.avif);
+    background-size: cover;
+}
+
+@media (max-width:540px){
+        
+        .link{
+         position: absolute;
+         left: 30px;
+    }
+}
+
+
+
+
+
+
+
+.containe{
+    display: flex;
+            position: absolute;
+            width: 1100px;
+          margin-left: 200px;
+            justify-content: center;
+            align-items: center;
+           top: 4500px;
+            padding: 30px;
+            padding-top: 200px;
+        }
+        .containe .car{
+            display: flex;
+            padding-top: 50px;
+          position: relative;
+            max-width: 300px;
+            height: 320px;
+            background:  beige;
+            margin: 30px 30px;
+        }
+       
+        .containe .car .imgb{
+           position: absolute;
+            width: 260px;
+            height: 260px;
+            top: -130px;
+            left: 20px;
+            z-index: 1;
+        }
+       
+        .containe .car .imgb img{
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .containe .car .conten{
+          
+            margin-top: -100px;
+            padding: 20px 15px;
+            text-align: center;
+            color: red;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.9s ease-in-out;
+
+        }
+        .containe .car:hover .conten{
+            visibility: visible;
+            opacity: 1;
+            margin-top: 120px;
+        }
+        .conten{
+            margin-top: 50px;
+        }
+        .imgb img:hover{
+           
+            scale: 1.1;
+            border-radius: 20px;
+        }
+       .car:hover{
+        scale: 1.2;
+        transform: perspective(330px) rotatey(3deg);
+        transition: 0.3s;
+       }
+    
+   
+</style>
+<body>
+   
+  <div class="container1">
+  <div class="line"></div>
+  <div class="popi">
+    <div id="hpop">
+    <h5>Innovating Skills</h5>
+</div>
+</div>
+    <nav>
+        <li><a id="a1" href="#" class="logo">
+            <img src="code-removebg-preview.png" alt="">
+            <span id="dash" class="nav-item">DashBoard</span>
+        </a></li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-home-alt-2'></i>
+            <span class="nav-item">Home</span>
+        </a> 
+
+        </li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-user'></i>
+             <span  class="nav-item">Profile</span>
+        </a>
+
+        </li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-wallet' ></i>
+            <span class="nav-item">Wallet</span>
+        </a>
+
+        </li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-bar-chart-alt-2' ></i>
+            <span class="nav-item">Chartbar</span>
+        </a>
+
+        </li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-analyse' ></i>
+            <span class="nav-item">Analystics</span>
+        </a>
+
+        </li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-bulb'></i>
+            <span class="nav-item">Help</span>
+        </a>
+
+        </li>
+        <li><a id="a1" href="#"> 
+            <i class='bx bx-cog' ></i>
+            <span class="nav-item">Settings</span>
+        </a>
+
+        </li>
+        <li><a id="a11" href="#" class="logout"> 
+            <i  class='bx bx-log-out-circle' ></i>
+            <span class="nav-item">Logout</span>
+        </a>
+
+        </li>
+    </nav>
+    <div class="line"></div>
+  </div>
+
+
+  <div id="bgg">
+   
+    <img  src="adm3.gif" alt="">
+   </div>
+
+
+
+   
+
+
+
+
+   
+
+  
+
+    <div class="row">
+        <div class="column">
+            <img style="margin-left: 50px;" class="image" src="beard.gif" alt="Image">
+        </div>
+        <div id="col2" class="column">
+            <h1 style="color: red;">Learning Hub</h1>
+            <p style="margin-top: 20px;color: #ffac1c;font-size: 20px;"><span  id="mar" style="color: navy;"font-size="30px"margin-bottom="20px">How long does it take to learn HTML and CSS?</span><br><br>
+                seven to eight months
+                The average learner should be able to complete CSS (and HTML) in less than seven to eight months after completing the initial stage of learning. You will have to go to extraordinary lengths to learn advanced HTML and CSS animations. Learning HTML and CSS will take one day, with two hours of instruction per day.</p>
+        </div>
+    </div>
+
+    <div class="line"></div> 
+    <div class="detailsrating">
+        <section>
+            <div class="title">
+            <p><b>Courses Offered in CODE RED</b></p></div>
+            <div class="container">
+                <div class="cardu">
+                    <div class="cir">
+                        <a class="link" href="#">HTML</a>
+                    </div>
+                    <img src="study-removebg-preview.png" alt="" height="200px" width="180px">
+                    <div class="content">
+                        <h3 id="h3">HTML</h3><br>
+                        <h5 id="h5">HTML 5 Version</h5><br><br> 
+                    </div>
+                   
+                </div>
+                <div class="cardu">
+                    <div class="cir">
+                        <a class="link" href="#">CSS</a>
+                    </div>
+                    <img src="study-removebg-preview.png" alt="" height="200px" width="180px">
+                    <div class="content">
+                        <h3 id="h3">CSS</h3><br>
+                        <h5 id="h5">CSS 3 VERSION</h5><br><br>
+                     
+                    </div>
+                </div>
+              
+                <div class="cardu">
+                    <div class="cir">
+                        <a class="link" href="#">JS</a>
+                    </div>
+                    <img src="study-removebg-preview.png" alt="" height="200px" width="180px">
+                    <div class="content">
+                        <h3 id="h3">Javascript</h3><br>
+                        <h5 id="h5">ES 13  VERSION</h5><br><br>
+                      
+                    </div>
+                </div>
+            </div>    
+        </section>
+    
+       
+    </div>
+    
+
+ 
+
+<div>
+    <div style="margin-top: 100px;" class="whole">
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    76%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    </div>
+
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    71%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    </div>
+
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    80%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="line"></div>
+
+
+    <div class="row">
+        <div id="col2" class="column">
+            <h1 style="color: red;">Live Session</h1>
+            <p style="margin-top: 20px;color: #ffac1c;font-size: 20px;"><span id="mar" style="color: navy;"font-size="30px">How long does it take to learn HTML and CSS?</span><br><br>
+                seven to eight months
+                The average learner should be able to complete CSS (and HTML) in less than seven to eight months after completing the initial stage of learning. You will have to go to extraordinary lengths to learn advanced HTML and CSS animations. Learning HTML and CSS will take one day, with two hours of instruction per day.</p>
+        </div>
+       
+       
+        <div class="column">
+            <img class="image" src="fatboy-unscreen.gif" alt="Image">
+    </div>
+</div>
+
+<div class="line"></div>   
+
+
+
+
+
+<div  class="split"> <h1 style="text-align: center;color: red;">BOOKS OFFERED IN CODE RED</h1>
+    <div class="book">
+        <div  id="card3" class="card">
+    <div class="imgbox">
+        <img src="htmli.jpg" alt="" height="400px" width="300px">
+    </div>
+    <div class="details">
+        <h2>HTML</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo.</p>
+        <button>BUYNOW</button>
+    </div>
+    
+        </div>
+        <div id="card" class="card">
+            <div class="imgbox">
+                <img src="cssii.jpg" alt="" height="400px" width="300px">
+            </div>
+            <div class="details">
+                <h2>CSS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo.</p>
+                <button>BUYNOW</button>
+            </div>
+            
+                </div>
+    
+                <div id="card1" class="card">
+                    <div class="imgbox">
+                        <img src="jsi.jpg" alt="" height="400px" width="300px">
+                    </div>
+                    <div class="details">
+                        <h2>Javscript</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo.</p>
+                        <button>BUYNOW</button>
+                    </div>
+                    
+                        </div>
+            
+                    </div>
+                </div>
+
+               
+
+
+
+
+
+
+                <div class="containe">
+                    <div class="car">
+                       <div class="imgb">
+                        <img src="htmli.jpg" alt="" height="250px" width="250px">
+                       </div>
+                       <div class="conten">
+                        <h2>HTML</h2>
+                        <p>The html is used to assign the structure
+                           of the website
+                            </p>
+                       </div>
+                    </div>
+                    <div class="car">
+                        <div class="imgb">
+                         <img src="cssii.jpg" alt="" height="250px" width="250px">
+                        </div>
+                        <div class="conten">
+                         <h2>CSS</h2>
+                         <p>The css is used to assign the add style
+                            to the website</p>
+                        </div>
+                     </div>
+                     <div class="car">
+                        <div class="imgb">
+                         <img src="jsi.jpg" alt="" height="250px" width="250px">
+                        </div>
+                        <div class="conten">
+                         <h2>JAVASCRIPT</h2>
+                         <p>The Javascript is used to assign the function
+                            of the website</p>
+                        </div>
+                     </div>
+                    
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="footer">
+                    <img src="codered-removebg-preview.png" alt="logo" id="logoo">
+                    <div class="list">
+                        <h3 id="h33">Home</h3>
+                        <h3 id="h33">About Us</h3>
+                        <h3 id="h33">Services</h3>
+                        <h3 id="h33">Contact</h3>
+                        <h3 id="h33">Location</h3>
+                    </div>
+                    <h4 id="h22">Follow Us On</h4>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p id="p">Contact us <br>02 8541 9786</p>
+                    
+            
+                </div>
+            
+
+
+
+
+ 
+
+
+        
+</body>
+</html>

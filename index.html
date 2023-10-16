@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;   
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+
+            gap: 30px;
+            background: #1d2b3a;
+        }
+        .inputBox{
+            position: relative;
+            width: 250px;
+        }
+        .inputBox input
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: #1d2b3a;
+            border-radius: 5px;
+            outline: none;
+            color: #fff;
+            font-size: 1em;
+            transition: 0.5s;
+        }
+        .inputBox span{
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            pointer-events: none;
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.25);
+            text-transform: uppercase;
+            transition: 0.5s;
+
+        }
+        .inputBox input:valid ~ span,
+        .inputBox input:focus ~ span
+        {
+            color: #00dfc4;
+            transform: translateX(10px)translateY(-7px);
+            font-size: 0.75em;
+            padding: 0.50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #1d2b3a;
+            border-left: 1px solid #00dfc4;
+            border-right: 1px solid #00dfc4;
+            letter-spacing: 0.2em;
+        }
+        .inputBox:nth-child(2) input:valid ~ span,
+        .inputBox:nth-child(2) input:focus ~ span
+        {
+            background: #00dfc4;
+            color: #1d2b3a;
+            border-radius: 2px;
+        }
+        
+        .inputBox input:valid,
+        .inputBox input:focus{
+            border: 1px solid #00dfc4;
+        }
+        button{
+            background-color: #00dfc4;
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #00dfc4;">Login</h1>
+    <div class="inputBox">
+        <input type="text" required="required">
+        <span>Accound id</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" required="required">
+        <span>PassWord</span>
+    </div>
+    <a href="adminn.html"><button>LOGIN</button></a>
+    <a href="">Forget password?</a>
+   <p style="color: #fff;">New user click the below SIGNUP button to register</p>
+   <a href="form2.html"><button>SIGNUP</button></a>
+    <!-- <h1 style="text-align: center;">SignUp</h1>
+    <div class="inputBox">
+        <input type="text" required="required">
+        <span>First Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" required="required">
+        <span>Last Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" required="required">
+        <span>MailId</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" required="required">
+        <span>Phone Number</span>
+    </div>
+    <button> SignUp</button> -->
+
+   
+
+</body>
+</html>
